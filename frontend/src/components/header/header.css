@@ -1,0 +1,161 @@
+.header {
+    width: 100%;
+   
+    padding: 15px 20px;
+    display: flex;
+   
+    justify-content: space-between;
+    background-color: #3d5977;;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .header-logo i {
+    font-size: 1.3rem;
+  }
+  
+
+  .header-menu {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+ 
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .header-right-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+  }
+  
+  .header-right-link:hover {
+    color: #f1f1f1;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: clip-path 0.3s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  .navbar.open {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+  }
+  
+  .nav-link:hover {
+    background: #f8f9fa;
+    border-radius: 5px;
+  }
+
+    .header-menu {
+      display: block;
+    }
+  
+    .navbar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+    img {
+      width: 40px;  
+      height: 40px; 
+  }
+
+  .header-right-user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-right-username {
+      font-size: 21px;
+      font-weight: 500;
+      color: var(--main-color);
+      margin-right: 10px;
+      text-transform: capitalize;
+      cursor: pointer;
+  }
+  
+  .header-right-user-photo {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  
+  .header-right-dropdown {
+      position: absolute;
+      right: 50%;
+      top: 100%;
+      background-color: var(--main-color);
+      border: 1px solid var(--white-color);
+      border-radius: 5px;
+      padding: 5px;
+      width: 150px;
+      text-align: left;
+  }
+  
+  .header-dropdown-item {
+      color: var(--primary-color);
+      font-weight: 500;
+      font-size: 21px;
+      margin-top: 15px;
+      cursor: pointer;
+  }
